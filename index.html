@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------------------------------------- Font Awesome ----------------------------------------->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!----------------------------------------- Bootstrap ----------------------------------------->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!----------------------------------------- Main Style ----------------------------------------->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <header>
+        <!----------------------------------------- Nav Bar Section ----------------------------------------->
+        <nav class="navbar navbar-expand-lg py-5 " id="navbar">
+            <div class="container">
+                <a href="index.html" class="d-flex justify-content-evenly align-items-center ">
+                    <img src="images/logo@2x.png" class="w-25" alt="logo pic">
+                    <div class="logo-content">
+                        <h1>Weather</h1>
+                        <p>tagline goes here</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!----------------------------------------- hero image Section ----------------------------------------->
+    <section class="hero-image">
+        <div class="container">
+            <div prev class="find-location position-relative">
+                <input oninput="search(this.value)" type="text" placeholder="Find your location..." class=" w-100 border- rounded-pill" id="search">
+                <button class="rounded-pill">Find</button>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------- forecast section ----------------------------------------->
+    <section class="forecast-section">
+        <div class="container ">
+            <div class="forecast-items d-flex">
+                <div class="today-forecast">
+                    <div class="forecast-header d-flex justify-content-between">
+                        <p class="day" id="day"></p>
+                        <p class="date" id="date"></p>
+                    </div>
+                    <div class="today-forecast-content">
+                        <p class="location" id="location"></p>
+                        <div class="degree">
+                            <p id="degree"></p>
+                            <img id="today-icon" src="" alt="">
+                        </div>
+                        <p class="weather" id="weather"></p>
+                        <span id="today-cloud-coverage"><img src="images/icon-umberella.png" alt=""></span>
+                        <span id="today-wind-speed"><img src="images/icon-wind.png" alt=""></span>
+                        <span id="today-wind-direction"><img src="images/icon-compass.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="forecast tomorrow-forecast">
+                    <div class="forecast-header tomorrow-forecast-header">
+                        <p class="forecast-day"></p>
+                    </div>
+                    <div class="forecast-content text-center">
+                        <div class="forecast-image">
+                            <img class="forecast-icon" src="images/113.png" alt="">
+                        </div>
+                        <div class="forecast-degree"></div>
+                        <div class="small-forecast-degree pb-3"></div>
+                        <p class="forecast-weather"></p>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <p class="forecast-day"></p>
+                    </div>
+                    <div class="forecast-content text-center">
+                        <div class="forecast-image">
+                            <img class="forecast-icon" src="images/113.png" alt="">
+                        </div>
+                        <div class="forecast-degree"></div>
+                        <div class="small-forecast-degree pb-3"></div>
+                        <p class="forecast-weather"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------- footer section ----------------------------------------->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div action="#" class="subscribe-form position-relative">
+                        <input type="text" placeholder="Enter your email to subscribe..."
+                            class=" w-100 border- rounded-pill">
+                        <button class="rounded-pill">Find</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="copyright mt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

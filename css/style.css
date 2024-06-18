@@ -1,0 +1,158 @@
+/* Global */
+body {
+    font-family: "Roboto", "Open Sans", sans-serif;;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav Bar Section */
+nav {
+    background-color: #1E202B;
+}
+
+.logo-content {
+    color: white;
+}
+.logo-content h1 {
+    font-size: 16px;
+}
+
+.logo-content p {
+    font-size: 10px;
+}
+
+.navbar-collapse ul li {
+    margin-left: 10px;
+    padding: 0px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+.navbar-collapse ul li:hover {
+    border-color: #009ad8;
+}
+.navbar-collapse ul li:hover a {
+    color: #009ad8 !important;
+}
+
+.navbar-collapse ul a {
+    color: white !important;
+}
+
+/* hero image Section */
+.hero-image {
+    padding: 70px 0;
+    height: 350px;
+    background-image: url(../images/banner.png);
+    background-size: cover;
+}
+
+input {
+    color: #eee;
+    padding: 20px;
+    background-color: #1E202B;
+    border: 0px;
+}
+
+button {
+    background-color: #009AD8;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+    border: 0px;
+}
+
+/* forecast Section */
+.forecast-section {
+    background-color: #1E202B;
+}
+
+.forecast-items {
+    transform: translateY(-30%);
+}
+
+.forecast-items > div {
+    width: 33.3%;
+    color: #BFC1C8;
+}
+
+.forecast-header {
+    padding: 10px;
+    background-color: #2E303D;
+    color: #BFC1C8;
+    text-align: center;
+}
+
+.today-forecast, .forecast {
+    background-color: #333544;
+}
+
+.today-forecast .today-forecast-content{
+    padding: 50px 20px 10px;
+}
+
+.today-forecast .today-forecast-content .location {
+    font-size: 18px;
+}
+
+.today-forecast .today-forecast-content .degree {
+    font-size: 90px;
+    color: #eee;
+}
+
+.today-forecast .today-forecast-content img {
+    margin: 0 10px;
+}
+
+.weather, .forecast-weather {
+    color: #009AD8;
+}
+
+.forecast .forecast-content {
+    padding: 50px 20px 10px;
+}
+
+.forecast .forecast-content img {
+    margin-bottom: 20px;
+}
+
+.forecast .forecast-content .forecast-degree {
+    color: #eee;
+    font-size: 24px;
+}
+
+/* other forecast */
+.tomorrow-forecast-header {
+    background-color: #232531;
+}
+
+.tomorrow-forecast {
+    background-color: #272936;
+}
+
+/* footer section */
+footer {
+    background-color: #272936;
+}
+
+.copyright {
+    color: #BFC1C8;
+}
+
+.social-links i {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #1E202B;
+    transition: 0.3s ease;
+}
+.social-links i:hover {
+    color: #eee;
+    background-color: #009AD8;
+}
